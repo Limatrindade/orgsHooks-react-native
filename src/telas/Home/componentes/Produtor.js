@@ -1,6 +1,6 @@
 import { Text, View, Image, StyleSheet, TouchableOpacity} from "react-native";
 
-import Estrelas from "../../../componentes/Estrela";
+import Estrelas from "../../../componentes/Estrelas";
 import { useState } from "react";
 
 export default function Produtor({ nome, imagem, distancia, estrelas }) {
