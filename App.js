@@ -1,13 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { View, SafeAreaView } from 'react-native';
+import { SafeAreaView, StyleSheet } from 'react-native';
 
 import Home from './src/telas/Home';
 
 export default function App() {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.tela}>
       <Home/>
-      <StatusBar style="auto" />
     </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+    tela: {
+      flex: 1
+    }
+});

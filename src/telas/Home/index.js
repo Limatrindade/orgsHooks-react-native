@@ -1,8 +1,12 @@
-// import { View } from "react-native";
+import { SafeAreaView } from "react-native";
+
 import Topo from "./componentes/Topo";
+import Produtores from "./componentes/Produtores";
 
 export default function Home() {
     return (
-        <Topo/>
+        <SafeAreaView>
+            <Produtores topo={Topo} />
+        </SafeAreaView>
     );
 }
